@@ -1,0 +1,39 @@
+{
+  "name": "maestro-peang",
+  "version": "1.0.0",
+  "description": "Maestor E-Commerce App",
+  "main": "dist/server.js",
+  "scripts": {
+    "start": "node dist/server.js",
+    "server": "nodemon dist/server.js --ignore client",
+    "watch": "yarn tsc -w",
+    "dev": "concurrently \"yarn watch\" \"yarn server\" -n tsc,server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aseerkt/maestro-peang.git"
+  },
+  "author": "Aseer KT",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aseerkt/maestro-peang/issues"
+  },
+  "homepage": "https://github.com/aseerkt/maestro-peang#readme",
+  "dependencies": {
+    "apollo-server-express": "^2.24.0",
+    "class-validator": "^0.13.1",
+    "colors": "^1.4.0",
+    "dotenv": "^9.0.0",
+    "graphql": "^15.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.6.0",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^1.1.1",
+    "typeorm": "^0.2.32",
+    "typescript": "^4.2.4"
+  },
+  "devDependencies": {
+    "concurrently": "^6.1.0",
+    "nodemon": "^2.0.7"
+  }
+}
